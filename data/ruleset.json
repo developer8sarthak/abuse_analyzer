@@ -1,0 +1,24 @@
+{
+  "version": "2.0.0",
+  "rules": {
+    "violence_and_gore": {
+      "weight": 1.0,
+      "patterns": ["kill(ing|ed)?", "murd(er|ered)?", "stabb?ed", "shoot(ing)?", "blood(y|ied)?", "torture", "massacre", "genocide", "execution"],
+      "leet_speak": ["k1ll", "mthrfkr", "d3ath"]
+    },
+    "sexual_abuse_and_harassment": {
+      "weight": 1.2,
+      "patterns": ["harass(ment)?", "assault", "rape", "molest", "porn(ography)?", "sex(ual)?", "explicit", "lewd", "non-consensual"],
+      "slurs": ["placeholder_for_restricted_terms"] 
+    },
+    "policy_violations": {
+      "weight": 0.8,
+      "patterns": ["scam", "fraud", "phishing", "illegal", "copyright", "piracy", "counterfeit", "money laundering", "dark web"],
+      "risk_keywords": ["unauthorized", "bypass", "jailbreak", "exploit"]
+    },
+    "profanity": {
+      "weight": 0.5,
+      "patterns": ["fuc?k", "shit", "bitch", "asshole", "bastard"]
+    }
+  }
+}
